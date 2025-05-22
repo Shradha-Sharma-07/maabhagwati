@@ -16,6 +16,11 @@
     box-sizing: border-box;
 }
 
+
+
+
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -99,6 +104,7 @@ img {
 .logo {
     display: flex;
     align-items: center;
+    padding-left: 15px;
 }
 
 .logo img {
@@ -148,13 +154,13 @@ img {
     
 }
 
-.mobile-menu-btn {
+/* .mobile-menu-btn {
     display: none;
     color: var(--white);
-    font-size: 24px;
+    font-size: 12px;
     cursor: pointer;
-    padding: 10px;
-}
+    padding: 20px; 
+} */
 
 
 /* Updated Header Styles */
@@ -196,6 +202,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    padding-left: 15px;
 }
 
 .logo img {
@@ -249,6 +256,8 @@ header {
     font-size: 24px;
     cursor: pointer;
     padding: 10px;
+    padding-left: 60px;
+    padding-bottom: 40px;
 }
 
 /* Responsive adjustments */
@@ -269,7 +278,7 @@ header {
 
 @media (max-width: 768px) {
     .header-content {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
     
@@ -1261,9 +1270,10 @@ strong {
 }
 
 @media (max-width: 768px) {
-  body {
-    padding: 4vh 4vw;
-  }
+  
+.top-bar{
+  display: none;
+}
 
   h1 {
     font-size: 2rem;
