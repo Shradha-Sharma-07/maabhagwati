@@ -108,31 +108,31 @@
       <h1>Get in Touch</h1>
       <div class="underline"></div>
 
-      <form>
+      <form id="contactform" action="send_mail.php" name="contactform" method="post">
         <div class="form-row">
           <div class="input-group">
-            <input type="text" placeholder="Your Name*" required />
+            <input type="text" placeholder="Your Name*" name="name" id="name" class="form-control" required />
             <i class="fa fa-user"></i>
           </div>
           <div class="input-group">
-            <input type="email" placeholder="Email Address*" required />
+            <input type="email" placeholder="Email Address*" name="email" id="email" class="form-control" required />
             <i class="fa fa-envelope"></i>
           </div>
         </div>
 
         <div class="form-row">
           <div class="input-group">
-            <input type="tel" placeholder="Phone Number*" required />
+            <input type="tel" placeholder="Phone Number*" name="phone" id="phone" class="form-control" required />
             <i class="fa fa-phone"></i>
           </div>
           <div class="input-group">
-            <input type="text" placeholder="Subject*" required />
+            <input type="text" placeholder="Subject*" name="subject" id="subject" class="form-control" required />
             <i class="fa fa-pen"></i>
           </div>
         </div>
 
         <div class="input-group full-width">
-          <textarea placeholder="Write Your Message*" required></textarea>
+          <textarea placeholder="Write Your Message*" class="form-control" name="comments" id="comments" required></textarea>
           <i class="fa fa-comment"></i>
         </div>
 
