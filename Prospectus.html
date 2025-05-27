@@ -18,38 +18,52 @@
         </div>
     </div>
 
-    <header>
-    <div class="main-header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="images/logo.png" alt="Maa Bhagwati Degree College Logo">
-                    <div class="logo-text">
-                        <h1>Maa Bhagwati Degree College</h1>
-                        <p>Affiliated to Lucknow University, Lucknow</p>
+   <header>
+
+        <div class="main-header">
+            <div class="container">
+
+                <div class="header-content">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Maa Bhagwati Degree College Logo">
+                        <div class="logo-text">
+                            <h1>Maa Bhagwati Degree College</h1>
+                            <p>Affiliated to Lucknow University, Lucknow</p>
+                        </div>
                     </div>
-                </div>
-                
-                <nav>
-                    <ul class="nav-menu">
-                            <li><a href="index.html" class="active">Home</a></li>
+
+                    <nav>
+                        <ul class="nav-menu">
+                            <li><a href="index.html" >Home</a></li>
 
                             <li><a href="about.html">About</a></li>
 
                             <li><a href="courses.html">Courses</a></li>
-                            <li><a href="facilities.html">Facilities</a></li>
+                            
+                            <li class="dropdown">
+                                <a href="facilities.html">Facilities<i class="fas fa-caret-down"></i></a>
+                                <div class="dropdown-content">
+                                   <a href="Compus.html" >Campus</a>
+                                    <a href="Library.html" >Library</a>
+                                    
+                                    <!-- <a href="FeeRefund.html">Fee Refund Policy</a> -->
+                                    <!-- <a href="RTI.html">RTI</a> -->
+                                </div>
+                            </li>
                             <!-- <li><a href="admission.html">Admission</a></li> -->
                             <li class="dropdown">
-                                <a href="admission.html">Admission <i class="fas fa-caret-down"></i></a>
+                                <a href="admission.html"class="active">Admission <i class="fas fa-caret-down"></i></a>
                                 <div class="dropdown-content">
-                                    
-                                    <a href="Prospectus.html">Prospectus</a>
+                                   <a href="images/Maa Bhagwati Degree College.pdf" target="_blank">Prospectus</a>
+                                    <a href="images/Admission_Form.pdf" target="_blank">Admission Form</a>
                                     <a href="fees.html">Fee Structure</a>
-                                    <a href="FeeRefund.html">Fee Refund Policy</a>
-                                    <a href="RTI.html">RTI</a>
+                                    <!-- <a href="FeeRefund.html">Fee Refund Policy</a> -->
+                                    <!-- <a href="RTI.html">RTI</a> -->
                                 </div>
                             </li>
                             <li><a href="rules.html">Rules & Regulation</a></li>
+                            <li><a href="RTI.html">RTI</a></li>
+                            <li><a href="Cell.html">Cell & Association</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="contact.html">Contact</a></li>
                             <li><a href="images/Guidelines on public self Disloser by Higher Education Institutiions 2024.pdf"
@@ -57,15 +71,18 @@
                                     class="disclouserBtn">Disclouser</a></li>
                         </ul>
 
+                        <div class="mobile-menu-btn">
+                            <i class="fas fa-bars"></i>
+                        </div>
 
-                    <div class="mobile-menu-btn">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
+
             </div>
         </div>
-    </div>
-</header>
+
+    </header>
+    
 
     <script src="js/script.js"></script>
 </body>

@@ -3,9 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navMenu = document.querySelector('.nav-menu');
     
-    mobileMenuBtn.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-    });
+    // mobileMenuBtn.addEventListener('click', function() {
+    //     navMenu.classList.toggle('active');
+    // });
+    document.querySelector(".mobile-menu-btn").addEventListener("click", function () {
+    document.querySelector(".nav-menu").classList.toggle("active");
+  });
     
     // Hero Slider
     const slides = document.querySelectorAll('.slide');
