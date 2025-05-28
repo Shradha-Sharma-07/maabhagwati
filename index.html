@@ -131,74 +131,78 @@
     <!-- HEADER SECTION -->
     <header>
       <div class="main-header">
-        <div class="container-fluid">
-          <div class="">
-            <div class="row">
-              <div class="logo" style="align-items: center; justify-content: center;">
-                <img
-                  src="images/logo.png"
-                  alt="Maa Bhagwati Degree College Logo"
-                />
-                <div class="logo-text">
-                  <h1>Maa Bhagwati Degree College</h1>
-                  <p>Affiliated to Lucknow University, Lucknow</p>
-                </div>
-              </div>
-            </div>
-            <div class="row" style="align-items: center; justify-content: center;">
-              <nav style="margin-left:22%; ">
-                <div class="mobile-menu-btn">
-                  <i class="fas fa-bars"></i>
-                </div>
-                <ul class="nav-menu">
-                  <li><a href="index.html" class="active">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="courses.html">Courses</a></li>
-                  <li class="dropdown">
-                    <a href="facilities.html"
-                      >Facilities <i class="fas fa-caret-down"></i
-                    ></a>
-                    <div class="dropdown-content">
-                      <a href="Compus.html">Campus</a>
-                      <a href="Library.html">Library</a>
-                    </div>
-                  </li>
-                  <li class="dropdown">
-                    <a href="admission.html"
-                      >Admission <i class="fas fa-caret-down"></i
-                    ></a>
-                    <div class="dropdown-content">
-                      <a
-                        href="images/Maa Bhagwati Degree College.pdf"
-                        target="_blank"
-                        >Prospectus</a
-                      >
-                      <a href="images/Admission_Form.pdf" target="_blank"
-                        >Admission Form</a
-                      >
-                      <a href="fees.html">Fee Structure</a>
-                    </div>
-                  </li>
-                  <li><a href="rules.html">Rules & Regulation</a></li>
-                  <li><a href="RTI.html">RTI</a></li>
-                  <li><a href="Cell.html">Cell & Association</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li>
-                    <a
-                      href="images/Guidelines on public self Disloser by Higher Education Institutiions 2024.pdf"
-                      target="_blank"
-                      class="disclouserBtn"
-                      >Disclouser</a
-                    >
-                  </li>
-                </ul>
-              </nav>
+        <div class="container">
+          <div class="logo">
+            <img
+              src="images/logo.png"
+              alt="Maa Bhagwati Degree College Logo"
+            />
+            <div class="logo-text">
+              <h1>Maa Bhagwati Degree College</h1>
+              <p>Affiliated to Lucknow University, Lucknow</p>
             </div>
           </div>
+
+          <nav>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">
+              <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li class="dropdown">
+                <a href="facilities.html"
+                  >Facilities <i class="fas fa-caret-down"></i
+                ></a>
+                <div class="dropdown-content">
+                  <a href="Compus.html">Campus</a>
+                  <a href="images/Library Stock.pdf" target="_blank">Library</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="admission.html"
+                  >Admission <i class="fas fa-caret-down"></i
+                ></a>
+                <div class="dropdown-content">
+                  <a
+                    href="images/Maa Bhagwati Degree College.pdf"
+                    target="_blank"
+                    >Prospectus</a
+                  >
+                  <a href="images/Admission_Form.pdf" target="_blank"
+                    >Admission Form</a
+                  >
+                  <a href="fees.html">Fee Structure</a>
+                  <a
+                    href="images/UGC_Guidelines_Fee_Refund_Policy.pdf"
+                    target="_blank"
+                    >Fee Refund Policy</a
+                  >
+                </div>
+              </li>
+              <li><a href="rules.html">Rules & Regulation</a></li>
+              <li><a href="RTI.html">RTI</a></li>
+              <li>
+                <a href="images/Maa Bhagwati Degree College.pdf" target="_blank"
+                  >Cell & Association</a
+                >
+              </li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a
+                  href="images/Guidelines on public self Disloser by Higher Education Institutiions 2024.pdf"
+                  target="_blank"
+                  >Disclosure</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
+
 
     <!-- Hero Section -->
     <section class="hero">
@@ -399,6 +403,11 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js">
+
+      function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("show");
+      }
+    </script>
   </body>
 </html>

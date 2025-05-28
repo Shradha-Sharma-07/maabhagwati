@@ -1,13 +1,12 @@
 // Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navMenu = document.querySelector('.nav-menu');
+  const navMenu = document.getElementById('navMenu');
+
+  mobileMenuBtn.addEventListener('click', function () {
+    navMenu.classList.toggle('show'); // This matches the CSS
+  
     
-    // mobileMenuBtn.addEventListener('click', function() {
-    //     navMenu.classList.toggle('active');
-    // });
-    document.querySelector(".mobile-menu-btn").addEventListener("click", function () {
-    document.querySelector(".nav-menu").classList.toggle("active");
   });
     
     // Hero Slider
