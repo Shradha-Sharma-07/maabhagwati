@@ -1840,3 +1840,59 @@ button:hover {
       max-width: 100%;
     }
   }
+/* RTI */
+
+.containerRTI {
+      max-width: 1200px;
+      margin: auto;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #1e3a8a;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #374151;
+      font-size: 24px;
+      margin: 20px 0 10px;
+    }
+
+    p, ul, ol {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
